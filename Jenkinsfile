@@ -4,7 +4,7 @@
             stage('Test') {
                 steps {
                     echo 'Hello World ...'
-                    dir
+                    bat 'dir'
                 }
             }
         }
