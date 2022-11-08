@@ -4,7 +4,7 @@
             stage('Test') {
                 steps {
                     echo 'Hello World ...'
-                    cmd /r dir C:\Project
+                    dir
                 }
             }
         }
