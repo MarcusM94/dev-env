@@ -4,11 +4,7 @@
             stage('Build') {
                 steps {
                     echo 'Fetching repos...'
-                    script {
-                        git clone 'https://github.com/enxhiferko/TraceAnalyser.git'
-                        git clone 'https://github.com/MarcusM94/CI-CD_Pipeline.git'
-                        bat 'dir'
-                        }
+                    git
                 }
             }
         }
