@@ -1,9 +1,11 @@
         pipeline {
-        agent { dockerfile true }
+                agent docker { image 'mcr.microsoft.com/windows-cssc/python3.7windows:ltsc2019' }
         stages {
-            stage('Test') {
+            stage('Build') {
                 steps {
-                    echo 'Hello World ...'
+                    echo 'Fetching repos...'
+                    git clone https://github.com/enxhiferko/TraceAnalyser.git
+                    git clone https://github.com/MarcusM94/CI-CD_Pipeline.git
                     bat 'dir'
                 }
             }
