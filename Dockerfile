@@ -12,3 +12,4 @@ RUN tar -xf pipeline.zip
 RUN echo "Fetching complete"
 
 ENTRYPOINT ["powershell.exe"]
+CMD ["powershell.exe"]
