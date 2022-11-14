@@ -1,5 +1,5 @@
         pipeline {
-                agent { docker { image 'mcr.microsoft.com/windows-cssc/python3.7windows:ltsc2019' } }
+                agent any
         stages {
             stage('Build') {
                 steps {
