@@ -4,6 +4,8 @@ import sys
 def main():
     output = sys.stdin.readlines()
     for line in output:
+        print(line)
+    for line in output:
         for word in line:
             if word.upper() == 'FAILED':
                 sys.exit(1)
