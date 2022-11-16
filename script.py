@@ -6,8 +6,8 @@ def main():
     for line in output:
         for word in line:
             if word.upper() == 'FAILED':
-                sys.exit(False)
-    sys.exit(True)
+                sys.exit(-1)
+    sys.exit(0)
 
 
 if __name__ == '__main__':
