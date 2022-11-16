@@ -45,9 +45,6 @@ jobs:
         dotnet build
         cd ..
         dotnet TraceAnalyser/Analyser/bin/debug/netcoreapp3.1/Analyser.dll | python3 script.py
-        if [ $? == 1 ]
-        then
-          exit 1
 
   publish:
 
