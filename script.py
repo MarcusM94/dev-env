@@ -6,7 +6,7 @@ def main():
     for line in output:
         for word in line:
             if word.upper() == 'FAILED':
-                sys.exit(-1)
+                sys.exit(1)
     sys.exit(0)
 
 
