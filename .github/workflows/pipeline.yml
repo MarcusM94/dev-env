@@ -39,11 +39,11 @@ jobs:
       run: |
           git clone https://github.com/enxhiferko/TraceAnalyser.git
     - name: Trace testing
-      run: |
-        ls
-
- publish:
-
+      run: ls
+ 
+ 
+  publish:
+ 
     runs-on: ubuntu-latest
     needs: trace-test
 
