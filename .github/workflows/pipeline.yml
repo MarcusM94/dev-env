@@ -41,9 +41,12 @@ jobs:
           git clone https://github.com/enxhiferko/TraceAnalyser.git
     - name: Trace testing
       run: |
+        ls
         cd TraceAnalyser
+        ls
         dotnet build
         cd ..
+        ls
         dotnet TraceAnalyser/Analyser/bin/Debug/netcoreapp3.1/Analyser.dll | python3 script.py
 
   publish:
