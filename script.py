@@ -2,7 +2,7 @@ import sys
 
 
 def main():
-    output = sys.stdin.readlines()
+    output = sys.stdin.readlines().split()
     for word in output:
         print(word)
 
