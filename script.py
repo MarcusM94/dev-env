@@ -10,8 +10,8 @@ def main():
             if word.upper() == 'FAILED':
                 print("hej")
                 sys.exit(1)
-    sys.exit(0)
     print("hejsan")
+    sys.exit(0)
 
 
 if __name__ == '__main__':
