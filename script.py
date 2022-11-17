@@ -7,9 +7,7 @@ def main():
         print(line)
     for line in output:
         for word in line:
-            if word.upper() == 'FAILED':
-                print("hej")
-                sys.exit(1)
+            print(word.upper())
     print("hejsan")
     sys.exit(0)
 
