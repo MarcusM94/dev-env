@@ -40,7 +40,7 @@ jobs:
         cd TraceAnalyser
         dotnet build
         cd Analyser/bin/Debug/netcoreapp3.1
-        dotnet Analyser.dll | python3 ../../../../../script.py
+        dotnet Analyser.dll
 
   publish:
 
