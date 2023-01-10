@@ -7,7 +7,7 @@ on: [push]
 
 jobs:
   rubus:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
   trace-test:
 
     runs-on: ubuntu-latest
