@@ -6,6 +6,8 @@ name: CI/CD Pipeline
 on: [push]
 
 jobs:
+  rubus:
+    runs-on: ubuntu-latest
   trace-test:
 
     runs-on: ubuntu-latest
@@ -43,7 +45,9 @@ jobs:
         dotnet build
         cd Analyser/bin/Debug/netcoreapp3.1
         dotnet Analyser.dll
-
+  
+  
+  
   publish:
 
     runs-on: ubuntu-latest
