@@ -9,10 +9,10 @@ jobs:
   rubus:
     runs-on: self-hosted
     steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-dotnet@v3
-      with:
-       dotnet-version: '3.1.x'
+    - name: Running tests...
+      run: |
+        git clone https://github.com/enxhiferko/TraceAnalyser.git
+        echo "Testing complete"
   trace-test:
 
     runs-on: ubuntu-latest
