@@ -8,6 +8,10 @@ on: [push]
 jobs:
   rubus:
     runs-on: self-hosted
+    steps:
+    - name: Publishing
+      run: |
+          echo "Publishing..."
   trace-test:
 
     runs-on: ubuntu-latest
